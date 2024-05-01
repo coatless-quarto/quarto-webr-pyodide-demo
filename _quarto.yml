@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: _site
+
+website:  
+  repo-url: https://github.com/coatless-quarto/quarto-webr-pyodide-demo
+  repo-actions: [edit, issue]
+  title: "webR and Pyodide in Quarto"
+  navbar:
+    search: false
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "quarto-webr"
+        file: quarto-webr.qmd
+      - text: "quarto-pyodide"
+        file: quarto-pyodide.qmd
