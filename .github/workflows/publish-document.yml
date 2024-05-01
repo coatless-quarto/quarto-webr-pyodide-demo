@@ -33,7 +33,7 @@ jobs:
         - name: "Setup R dependencies for Quarto's knitr engine"
           uses: r-lib/actions/setup-r-dependencies@v2
           with:
-          packages:
+            packages:
               any::knitr
               any::rmarkdown
               any::downlit
