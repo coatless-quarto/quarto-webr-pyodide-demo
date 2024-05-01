@@ -1,0 +1,12 @@
+---
+title: Pairing {quarto-webr} and {quarto-pyodide} with CD
+format:
+  html:
+    toc: true
+---
+
+In this example, we can see what a continuous deployment of Quarto documents using `{quarto-webr}` and `{quarto-pyodide}`. 
+
+Access the documents by clicking on the links to the left.
+
+
