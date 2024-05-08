@@ -4,9 +4,11 @@ This repository houses an example workflow that allows for continuous deployment
 
 ## Authoring Workspaces
 
-We use [Development Containers (`devcontainers`)](https://containers.dev/) to create two different authoring workspaces that work with [GitHub Codespaces](https://github.com/features/codespaces). These authoring spaces are setup to immediately allow you to modify and/or explore [`quarto-webr`](https://github.com/coatless/quarto-webr) and [`quarto-pyodide`](https://github.com/coatless-quarto/pyodide) projects without needing to install authoring software (Quarto, RStudio or VS Code, and the extensions) on your local computer.
+We use [Development Containers (`devcontainers`)](https://containers.dev/) to create [two different authoring workspaces](.devcontainer/) that work with [GitHub Codespaces](https://github.com/features/codespaces). These authoring spaces are setup to immediately allow you to modify and/or explore [`quarto-webr`](https://github.com/coatless/quarto-webr) and [`quarto-pyodide`](https://github.com/coatless-quarto/pyodide) projects without needing to install authoring software (Quarto, RStudio or VS Code, and the extensions) on your local computer.
 
-**Note:** Codespaces are available to Students and Teachers for free [up to 180 core hours per month](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom#about-github-codespaces) through [GitHub Education](https://education.github.com/). Otherwise, you will have [up to 60 core hours and 15 GB free per month](https://github.com/features/codespaces#pricing).
+> [!NOTE] 
+> 
+> Codespaces are available to Students and Teachers for free [up to 180 core hours per month](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom#about-github-codespaces) through [GitHub Education](https://education.github.com/). Otherwise, you will have [up to 60 core hours and 15 GB free per month](https://github.com/features/codespaces#pricing).
 
 
 ### VS Code 
@@ -34,3 +36,22 @@ If done successfully, you should see a new browser window with the familiar RStu
 ![Full RStudio authoring workspace](images/rstudio-authoring-workspace-launched.png)
 
 From there, open the desired Quarto document by double clicking on it in the Files tab on the lower right hand side. Then, press the "Render" button. RStudio will then open a new tab with the rendered Quarto document. 
+
+## Enabling GitHub Pages Deployment
+
+> [!IMPORTANT]
+> 
+> This sections requires the repository to be cloned and/or forked to a personal copy for it work.
+
+To enable deployment through GitHub Actions to GitHub Pages, please enable it on the repository by:
+
+- Clicking on the repository's **Settings** page
+- Selecting **Pages** on the left sidebar.
+- Picking the **GitHub Actions** option in the **Source** drop-down under the Build and Deployment section.
+- Ensuring that **Enforced HTTPS** is checked. 
+
+[![Example annotation of the repository's Settings page for GitHub Actions deployment][1]][1]
+
+This allows the GitHub Action in [`.github/workflows/publish-document.yml`](.github/workflows/publish-document.yml) to run each time a commit is made to the repository.
+
+  [1]: images/enable-github-pages-via-actions.png
