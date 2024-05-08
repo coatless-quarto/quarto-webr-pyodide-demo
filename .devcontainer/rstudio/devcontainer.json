@@ -20,7 +20,7 @@
   	"8787": {
   		"label": "RStudio",
   		"requireLocalPort": true,
-  		"onAutoForward": "ignore"
+  		"onAutoForward": "openBrowser"
   	}
   },
   "postAttachCommand": {
