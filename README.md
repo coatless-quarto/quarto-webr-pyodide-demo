@@ -11,7 +11,7 @@ We use [Development Containers (`devcontainers`)](https://containers.dev/) to cr
 
 ### VS Code 
 
-If you are comfortable with VS Code, you can try out the Codespace by clicking on the following button:
+If you are comfortable with VS Code, you can try out the authoring space by clicking on the following button:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/coatless-quarto/quarto-webr-pyodide-demo?devcontainer_path=.devcontainer%2Fvs-code%2Fdevcontainer.json)
 
@@ -33,3 +33,4 @@ If done successfully, you should see a new browser window with the familiar RStu
 
 ![Full RStudio authoring workspace](images/rstudio-authoring-workspace-launched.png)
 
+From there, open the desired Quarto document by double clicking on it in the Files tab on the lower right hand side. Then, press the "Render" button. RStudio will then open a new tab with the rendered Quarto document. 
