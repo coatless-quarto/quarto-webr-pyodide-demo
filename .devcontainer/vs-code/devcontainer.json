@@ -1,6 +1,6 @@
 // Config options: https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver
 {
-  "name": "VS Code - R (rocker/r-ver base)",
+  "name": "VS Code - Quarto",
   "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.4",
   // Add software
   "features": {

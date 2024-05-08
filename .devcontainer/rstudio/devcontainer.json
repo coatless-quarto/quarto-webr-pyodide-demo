@@ -1,6 +1,6 @@
 // Config options: https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver
 {
-  "name": "RStudio (rocker/r-ver base)",
+  "name": "RStudio",
   "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.4",
   // Add software
   "features": {
@@ -20,7 +20,7 @@
   	"8787": {
   		"label": "RStudio",
   		"requireLocalPort": true,
-  		"onAutoForward": "openBrowser"
+  		"onAutoForward": "notify" 
   	}
   },
   "postAttachCommand": {
