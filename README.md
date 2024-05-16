@@ -54,4 +54,10 @@ To enable deployment through GitHub Actions to GitHub Pages, please enable it on
 
 This allows the GitHub Action in [`.github/workflows/publish-document.yml`](.github/workflows/publish-document.yml) to run each time a commit is made to the repository.
 
+## Acknowledgements
+
+The author space demo was setup for [guest lectures](https://github.com/coatless-talks/stats352-guest-lectures-on-dynamic-interactions-wasm) in STATS 352 at Stanford University so that students could try authoring documents without installing software. 
+
+The underlying devcontainers are built using [rocker project](https://rocker-project.org/)'s [version stack](https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver) and [devcontainer-features](https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver) ([Details](https://containers.dev/implementors/features/)). The features were created by [Tatsuya Shima (@eitsupi)](https://github.com/eitsupi).
+
   [1]: images/enable-github-pages-via-actions.png
